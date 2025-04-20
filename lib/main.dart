@@ -1,5 +1,9 @@
 // ignore_for_file: unused_import, duplicate_import
 
+import 'package:studentinfo_mobile_app/screens/welcome-page/welcome_screen.dart';
+import 'package:studentinfo_mobile_app/screens/login-page/login_screen.dart';
+import 'package:studentinfo_mobile_app/screens/signup-page/signup_screen.dart';
+
 import 'package:flutter/material.dart';
 
 void main() async {
@@ -29,15 +33,15 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
 
-      // initialRoute: 'welcome_screen',
-      // routes: {
-      //   WelcomeScreen.id: (context) => WelcomeScreen(), // welcome_screen
-      //   LoginPage1.id: (context) => LoginPage1(), //id = "login_screen"
-      //   Signup.id: (context) => Signup(), //id = "signup_screen""
-      //   MissionScreen.id: (context) => MissionScreen(), //mission_screen
-      //   GalleryScreen.id: (context) => GalleryScreen(), //gallery_screen
-      //   Dashboard.id: (context) => Dashboard(), //dashboard_screen
-      // },
+      initialRoute: 'welcome_screen',
+      routes: {
+        WelcomeScreen.id: (context) => WelcomeScreen(), // welcome_screen
+        LoginScreen.id: (context) => LoginScreen(), //id = "login_screen"
+        //   Signup.id: (context) => Signup(), //id = "signup_screen""
+        //   MissionScreen.id: (context) => MissionScreen(), //mission_screen
+        //   GalleryScreen.id: (context) => GalleryScreen(), //gallery_screen
+        //   Dashboard.id: (context) => Dashboard(), //dashboard_screen
+      },
     );
   }
 }
