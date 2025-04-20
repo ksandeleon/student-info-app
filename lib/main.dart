@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 
-void main () async {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   // sqfliteFfiInit();
@@ -40,20 +40,7 @@ class MyApp extends StatelessWidget {
       // },
     );
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 // import 'package:flutter/material.dart';
 
