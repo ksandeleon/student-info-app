@@ -66,7 +66,6 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
       body: SafeArea(
         child: Column(
           children: [
-            // App Logo and Title
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Row(
