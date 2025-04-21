@@ -20,7 +20,7 @@ class DatabaseService {
   }
 
   Future<Database> _initDatabase() async {
-    String path = join(await getDatabasesPath(), 'goparent_v6.db');
+    String path = join(await getDatabasesPath(), 'studentinfoapp_v1.db');
     return await openDatabase(
       path,
       version: 1,
@@ -57,15 +57,14 @@ class DatabaseService {
     ''');
   }
 
-Future<void> listTables() async {
-  final db = await DatabaseService.instance.database;
-  final result = await db.rawQuery("SELECT name FROM sqlite_master WHERE type='table';");
-
-  print("List of tables:");
-  for (var table in result) {
-    print(table['name']);
+ Future<void> listTables() async {
+    final db = await DatabaseService.instance.database;
+    final result = await db.rawQuery("SELECT name FROM sqlite_master WHERE type='table';");
+    print("List of tables:");
+    for (var table in result) {
+      print(table['name']);
+    }
   }
-}
 
 Future<void> dropTable(String tableName) async {
   final db = await DatabaseService.instance.database;
