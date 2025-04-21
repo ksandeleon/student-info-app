@@ -5,6 +5,7 @@ import 'package:studentinfo_mobile_app/screens/login-page/login_screen.dart';
 import 'package:studentinfo_mobile_app/screens/signup-page/signup_screen.dart';
 
 import 'package:flutter/material.dart';
+import 'sqlite.dart'; 
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
