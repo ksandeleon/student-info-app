@@ -8,15 +8,8 @@ import 'package:flutter/material.dart';
 import 'sqlite.dart'; 
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-
-  // sqfliteFfiInit();
-  // databaseFactory = databaseFactoryFfi;
-
-  // await DatabaseService.instance.database;
-
-  // SystemChrome.setSystemUIOverlayStyle(
-  //     SystemUiOverlayStyle(statusBarColor: Colors.black));
+  WidgetsFlutterBinding.ensureInitialized();await DatabaseService.instance.database;
+await DatabaseService.instance.listTables();
 
   runApp(const MyApp());
 }
